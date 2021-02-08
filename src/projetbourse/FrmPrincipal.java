@@ -313,21 +313,29 @@ public class FrmPrincipal extends javax.swing.JFrame {
         
         numAction = Integer.parseInt(tblActions.getValueAt(tblActions.getSelectedRow(), 0).toString());
         
-        double montantCoursReel = 0;
-        double montantCoursAchat = 0;
-        double montantPortefeuille = 0 ;
-        
-//        if ( >6) 
+//        double montantCoursReel = 0;
+//        double montantCoursAchat = 0;
+//        double montantPortefeuille = 0 ;
+//        
+//        int a = Integer.parseInt(txtQuantiteVendue.getText());
+//        if (a == null) 
 //        {
 ////            if (numAction<0) {
 ////                JOptionPane.showMessageDialog(this, "Sélectionner une action");
 ////            }
-//            JOptionPane.showMessageDialog(this, "Sélectionner");
+////            JOptionPane.showMessageDialog(this, "Veuillez saisir une quantité");
+//            JOptionPane.showMessageDialog(this, "Veuillez saisir une quantité");
 //        }
 //        else
 //        {
-//            JOptionPane.showMessageDialog(this, "Sélectionner une action");
+//            JOptionPane.showMessageDialog(this, "Vous ne pouvez pas vendre plus que ce que vous possédez");
 //        }
+        
+        
+        
+        
+        
+        
 //        int a = Integer.parseInt(txtQuantiteVendue.toString());
 //        if (a ==) {
 //            
