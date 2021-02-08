@@ -278,10 +278,31 @@ public class FrmPrincipal extends javax.swing.JFrame {
         
         numAction = Integer.parseInt(tblActions.getValueAt(tblActions.getSelectedRow(), 0).toString());
         
+        double montantCoursReel = 0;
+        double montantCoursAchat = 0;
+        double montantPortefeuille = 0 ;
         
-        
-        
-        
+        for (Trader trads : mesTraders) 
+        {
+            for (Action acts : trads.getLesActions()) 
+            {
+                if (acts.getId() == numAction)
+                {
+                    //accumuler les 
+                montantCoursAchat = acts.getPrixAchat();
+                montantCoursReel = acts.getCoursReel();
+                montantPortefeuille = (montantCoursReel - montantCoursAchat)*acts.getQuantite();
+                }
+            }
+            if (montantPortefeuille > 0) 
+            {
+                lblMessage.setText("Vous gagnez de l'argent sur cette action : " + String.valueOf(montantPortefeuille));
+            }
+            else
+            {
+                lblMessage.setText("Vous perdez de l'argent sur cette action : " + String.valueOf(montantPortefeuille));
+            }   
+        }
     }//GEN-LAST:event_tblActionsMouseClicked
 
     private void btnVendreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVendreMouseClicked
