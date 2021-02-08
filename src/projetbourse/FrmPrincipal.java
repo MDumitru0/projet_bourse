@@ -308,9 +308,53 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private void btnVendreMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVendreMouseClicked
         
         // A vous de jouer
+        dtmTraders = (DefaultTableModel)tblTraders.getModel();
+        dtmActions = (DefaultTableModel)tblActions.getModel();
         
+        numAction = Integer.parseInt(tblActions.getValueAt(tblActions.getSelectedRow(), 0).toString());
         
+        double montantCoursReel = 0;
+        double montantCoursAchat = 0;
+        double montantPortefeuille = 0 ;
         
+//        if ( >6) 
+//        {
+////            if (numAction<0) {
+////                JOptionPane.showMessageDialog(this, "Sélectionner une action");
+////            }
+//            JOptionPane.showMessageDialog(this, "Sélectionner");
+//        }
+//        else
+//        {
+//            JOptionPane.showMessageDialog(this, "Sélectionner une action");
+//        }
+//        int a = Integer.parseInt(txtQuantiteVendue.toString());
+//        if (a ==) {
+//            
+//        }
+//        
+//        
+//        
+//        for (Trader trads : mesTraders) 
+//        {
+//            for (Action acts : trads.getLesActions()) 
+//            {
+//                if (numAction < 0 || numAction > 6) 
+//                {
+//                    JOptionPane.showMessageDialog(this, "Sélectionner une action");
+//                }
+                
+                
+//                if (acts.getId() == numAction)
+//                {
+//                    if (acts.getQuantite() == 0) 
+//                    {
+//                        JOptionPane.showMessageDialog(this, "Veuillez saisir une quantité");
+//                    }
+//                }
+//            }   
+//        }
+//        
         
         
         
